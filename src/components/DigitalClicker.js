@@ -13,10 +13,9 @@ class DigitalClicker extends Component {
 
   handleClick = () => {
     // when handleClick is called, newCount is set to whatever this.state.count is plus 1 PRIOR to calling this.setState
-    let newCount = this.state.count + 1
-    this.setState({
-      count: timesClicked
-    })
+    this.setState(prevState => ({
+    timesClicked: prevState.timesClicked+1
+  }))
   }
 
   render() {
