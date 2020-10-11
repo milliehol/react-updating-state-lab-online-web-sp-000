@@ -7,7 +7,7 @@ class DigitalClicker extends Component {
     super()
     // initial state has count set at 0
     this.state = {
-      count: 0
+      timesClicked: 0
     }
   }
 
